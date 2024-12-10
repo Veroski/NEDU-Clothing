@@ -22,6 +22,7 @@ const HomePage = () => (
           src="/assets/logo.png"
           alt="NEDU Clothing Logo"
           className="mx-auto mb-8 w-48"
+          style={{ borderRadius: "50%" }}
         />
         <h1 className="text-5xl font-bold mb-4">NEDU Clothing</h1>
         <p className="text-xl mb-8">Elegancia y frescura en cada prenda</p>

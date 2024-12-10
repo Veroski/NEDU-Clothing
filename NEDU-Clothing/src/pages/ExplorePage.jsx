@@ -6,10 +6,10 @@ import { useLocation } from "react-router-dom"; // Necesario para leer parámetr
 // Simulación de datos de productos
 const products = [
   { id: 1, name: "Sudadera Messi", price: 39.99, category: "Hombre", imageUrl: "/assets/product4.png" },
-  { id: 2, name: "Tirantes", price: 19.99, category: "Mujer", imageUrl: "/assets/product6.png" },
+  { id: 2, name: "Tirantes pou", price: 19.99, category: "Mujer", imageUrl: "/assets/product6.png" },
   { id: 3, name: "Sudadera CR7", price: 39.98, category: "Hombre", imageUrl: "/assets/product11.png" },
   { id: 4, name: "Gorra", price: 14.99, category: "Accesorios", imageUrl: "/assets/product7.png" },
-  { id: 5, name: "Suéter pou", price: 29.99, category: "Mujer", imageUrl: "/assets/product9.png" },
+  { id: 5, name: "Suéter Minecraft", price: 29.99, category: "Mujer", imageUrl: "/assets/product9.png" },
   { id: 6, name: "Suéter de Seda", price: 29.99, category: "Hombre", imageUrl: "/assets/product12.png" },
   { id: 7, name: "Bolso de Cuero", price: 23.99, category: "Accesorios", imageUrl: "/assets/product8.png" },
   { id: 8, name: "Pantalón Pijama", price: 8.99, category: "Hombre", imageUrl: "/assets/product10.png" },
@@ -23,7 +23,7 @@ const ProductCard = ({ name, price, imageUrl }) => (
       className="w-full h-64 object-cover mb-4 rounded"
     />
     <h3 className="text-lg font-semibold mb-2">{name}</h3>
-    <p className="text-gray-600 mb-4">€{price.toFixed(2)}</p>
+    <p className="text-gray-600 mb-4">{price.toFixed(2)}€</p>
     <button className="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition duration-300 flex items-center justify-center w-full">
       <ShoppingBag className="mr-2" size={18} />
       Comprar
