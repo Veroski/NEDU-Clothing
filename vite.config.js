@@ -1,12 +1,13 @@
+// vite.config.js
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [react()],
+  base: '/', // Publica desde la raíz
   build: {
-    outDir: 'dist', // El directorio de salida de los archivos generados
+    outDir: 'dist', // El directorio de salida
+    emptyOutDir: true,
     rollupOptions: {
-      input: 'src/index.html', // Especifica la entrada como index.html en el directorio src
+      input: 'index.html', // Asegúrate de que Vite busque el archivo en la raíz
     },
   },
 });
